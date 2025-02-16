@@ -78,6 +78,15 @@ public class MessageApplicationWithSpring {
             System.out.println(service6);
             System.out.println(service7);
         }
+
+        SlackService service8=context.getBean(SlackService.class);
+        service8.printContact();
+        System.out.println("------------------------------------");
+        service8.getContact();
+
+
+
+
     context.close();
         context.close();
 
